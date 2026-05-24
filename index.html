@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Abhishek Singh - UI/UX Designer</title>
     <meta name="description" content="Portfolio of Abhishek Singh, a UI/UX designer based in Lucknow, featuring Vyybee and Planto case studies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Abhishek Singh portfolio home">A Portfolio</a>
+      <a class="brand" href="#home" aria-label="Abhishek Singh portfolio home">
+        <span class="brand-mark">AS</span>
+        <span>Portfolio</span>
+      </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
         <span></span>
         <span></span>
@@ -25,26 +31,47 @@
     <main id="home">
       <section class="hero section-pad">
         <div class="hero-bg" aria-hidden="true"></div>
-        <p class="eyebrow reveal">UI/UX Designer</p>
+        <p class="eyebrow reveal">UI/UX Designer / Product Storyteller</p>
         <div class="hero-grid">
           <div class="reveal">
             <h1>Abhishek Singh</h1>
-            <p class="hero-copy">A versatile designer specializing in product, web, and graphic design to help brands turn ideas into clear, usable digital experiences.</p>
+            <p class="hero-copy">A versatile designer crafting product, web, and visual systems that make digital experiences feel sharp, usable, and emotionally memorable.</p>
             <div class="hero-actions">
               <a class="button primary" href="#projects">See Projects</a>
               <a class="button ghost" href="#contact">Contact Now</a>
             </div>
+            <div class="hero-metrics" aria-label="Portfolio highlights">
+              <div><strong>02</strong><span>Featured case studies</span></div>
+              <div><strong>10+</strong><span>Design skills</span></div>
+              <div><strong>2025</strong><span>Available for projects</span></div>
+            </div>
           </div>
-          <aside class="status-panel reveal" aria-label="Availability and skills">
-            <span class="status-dot"></span>
-            <p>Available for work</p>
-            <strong>Lucknow based UI/UX Designer and Editor</strong>
-            <div class="mini-tags">
-              <span>Figma</span>
-              <span>UX Design</span>
-              <span>Design Systems</span>
+          <aside class="hero-feature reveal" aria-label="Featured design preview">
+            <div class="feature-orbit" aria-hidden="true"></div>
+            <img class="hero-phone one" src="assets/vyybee-vibe-score.png" alt="Vyybee vibe score screen">
+            <img class="hero-phone two" src="assets/planto-preview.png" alt="Planto landing page preview">
+            <div class="status-panel">
+              <span class="status-dot"></span>
+              <p>Available for work</p>
+              <strong>Lucknow based UI/UX Designer and Editor</strong>
+              <div class="mini-tags">
+                <span>Figma</span>
+                <span>UX Design</span>
+                <span>Design Systems</span>
+              </div>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Design capabilities">
+        <div>
+          <span>Product Design</span>
+          <span>UX Strategy</span>
+          <span>Visual Systems</span>
+          <span>Wireframes</span>
+          <span>Prototypes</span>
+          <span>Motion Ready UI</span>
         </div>
       </section>
 
@@ -55,11 +82,11 @@
         </div>
         <div class="project-grid">
           <a class="project-card reveal" href="projects/vyybee.html" aria-label="Open Vyybee case study">
-            <img src="assets/vyybee-preview.svg" alt="Vyybee dating app interface preview">
+            <img src="assets/vyybee-journey-score.png" alt="Vyybee Figma screens showing compatibility, journey, and vibe score">
             <div>
               <p class="project-type">Mobile app / Dating</p>
               <h3>Vyybee</h3>
-              <p>A Gen Z dating app concept focused on vibe-first discovery, expressive profiles, and low-friction conversations.</p>
+              <p>A Gen Z dating app shaped around compatibility checks, post-chat journeys, vibe scores, and playful relationship feedback loops.</p>
             </div>
           </a>
           <a class="project-card reveal" href="projects/planto.html" aria-label="Open Planto case study">
@@ -70,6 +97,30 @@
               <p>A premium plant shopping landing page with dark glassmorphism, curated products, customer reviews, and a calm green visual language.</p>
             </div>
           </a>
+        </div>
+      </section>
+
+      <section class="section-pad design-lab">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Design Detail</p>
+          <h2>Built to feel like a designer's own studio, not a template.</h2>
+        </div>
+        <div class="lab-grid">
+          <article class="lab-card reveal">
+            <span>01</span>
+            <h3>Real product screens</h3>
+            <p>Project cards use captured interface work from Figma so the portfolio leads with evidence, not decoration.</p>
+          </article>
+          <article class="lab-card reveal">
+            <span>02</span>
+            <h3>Editorial rhythm</h3>
+            <p>Large type, compact cards, and generous negative space create a modern UI/UX portfolio cadence.</p>
+          </article>
+          <article class="lab-card reveal">
+            <span>03</span>
+            <h3>Conversion ready</h3>
+            <p>Clear project paths, service clarity, and contact actions keep the site beautiful but practical.</p>
+          </article>
         </div>
       </section>
 
