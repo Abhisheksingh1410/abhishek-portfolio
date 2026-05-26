@@ -1,3 +1,4 @@
+// Mobile navigation toggle
 const toggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".site-nav");
 
@@ -15,6 +16,22 @@ if (toggle && nav) {
   });
 }
 
+// Mouse Follower Solid Dot
+const follower = document.querySelector(".mouse-follower");
+
+if (follower) {
+  document.addEventListener("mousemove", (e) => {
+    follower.style.left = `${e.clientX}px`;
+    follower.style.top = `${e.clientY}px`;
+    follower.style.opacity = "1";
+  });
+
+  document.addEventListener("mouseleave", () => {
+    follower.style.opacity = "0";
+  });
+}
+
+// Scroll reveal animations using Intersection Observer
 const reveals = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
@@ -27,7 +44,7 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.14 }
+    { threshold: 0.12 }
   );
 
   reveals.forEach((element) => observer.observe(element));
