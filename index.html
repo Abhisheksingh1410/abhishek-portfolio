@@ -17,11 +17,26 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!-- Sharp white follower dot trailing the cursor -->
+    <div class="mouse-follower" aria-hidden="true"></div>
+
     <!-- Floating pill header -->
     <header class="site-header">
       <a class="brand" href="#home" aria-label="Abhishek Singh portfolio home">
-        <span class="brand-mark">AS</span>
-        <span>Portfolio</span>
+        <span class="brand-logo">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6366f1" />
+                <stop offset="100%" stop-color="#38bdf8" />
+              </linearGradient>
+            </defs>
+            <path d="M6 26L14 6C14.5 4.8 15.5 4 16.8 4C18 4 19 4.8 19.5 6L27.5 26" stroke="url(#logo-grad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 18H22.5" stroke="url(#logo-grad)" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="M10 26C10 26 13 23 16 23C19 23 22 26 22 26" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">Abhishek.Design</span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
         <span></span>
@@ -39,6 +54,16 @@
     <main id="home">
       <!-- Hero Section -->
       <section class="hero section-pad">
+        <!-- Background animated shooting stars -->
+        <div class="shooting-stars-container" aria-hidden="true">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+
         <div class="hero-bg" aria-hidden="true"></div>
         <div class="hero-content">
           <!-- Availability Badge -->
@@ -47,7 +72,7 @@
             <span>Available for work</span>
           </div>
           
-          <p class="eyebrow reveal">UI/UX Designer / Product Storyteller</p>
+          <p class="eyebrow reveal">UI/UX Designer / Product Designer</p>
           
           <div class="hero-grid">
             <div class="reveal">
@@ -66,8 +91,9 @@
             
             <aside class="hero-feature reveal" aria-label="Featured design preview">
               <div class="feature-orbit" aria-hidden="true"></div>
-              <img class="hero-phone one" src="assets/vyybee-vibe-score.png" alt="Vyybee vibe score screen">
-              <img class="hero-phone two" src="assets/planto-preview.png" alt="Planto landing page preview">
+              <!-- Pedestal preview of Vyybee dating app mockup -->
+              <img class="hero-phone one" src="assets/vyybee-pedestal.jpeg" alt="Vyybee dating app screen mockup">
+              <img class="hero-phone two" src="assets/planto-mockup-1.jpeg" alt="Planto landing page desktop design mockup">
               <div class="status-panel">
                 <strong>Lucknow based UI/UX Designer and Editor</strong>
                 <div class="mini-tags">
@@ -81,48 +107,26 @@
         </div>
       </section>
 
-      <!-- Infinite scrolling text ticker -->
+      <!-- Seamless scrolling ticker with glassmorphism chips -->
       <section class="ticker-text-marquee" aria-label="Design capabilities">
         <div class="ticker-text-container">
           <div class="ticker-text-track">
-            <div class="ticker-text-slide">
-              <span>Product Design</span><span>•</span>
-              <span>UX Strategy</span><span>•</span>
-              <span>Visual Systems</span><span>•</span>
-              <span>Wireframes</span><span>•</span>
-              <span>Prototypes</span><span>•</span>
-              <span>Motion Ready UI</span><span>•</span>
-            </div>
-            <div class="ticker-text-slide" aria-hidden="true">
-              <span>Product Design</span><span>•</span>
-              <span>UX Strategy</span><span>•</span>
-              <span>Visual Systems</span><span>•</span>
-              <span>Wireframes</span><span>•</span>
-              <span>Prototypes</span><span>•</span>
-              <span>Motion Ready UI</span><span>•</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Infinite horizontal moving screens marquee -->
-      <section class="marquee-section reveal" aria-label="Moving screens showcase">
-        <div class="marquee-container">
-          <div class="marquee-track">
-            <div class="marquee-slide">
-              <img src="assets/framer-marquee-1.png" alt="Framer Project Screenshot 1">
-              <img src="assets/vyybee-journey-score.png" alt="Vyybee dating app screen">
-              <img src="assets/framer-marquee-2.png" alt="Framer Project Screenshot 2">
-              <img src="assets/planto-preview.png" alt="Planto e-commerce screen">
-              <img src="assets/vyybee-vibe-score.png" alt="Vyybee vibe score screen">
-            </div>
-            <div class="marquee-slide" aria-hidden="true">
-              <img src="assets/framer-marquee-1.png" alt="Framer Project Screenshot 1">
-              <img src="assets/vyybee-journey-score.png" alt="Vyybee dating app screen">
-              <img src="assets/framer-marquee-2.png" alt="Framer Project Screenshot 2">
-              <img src="assets/planto-preview.png" alt="Planto e-commerce screen">
-              <img src="assets/vyybee-vibe-score.png" alt="Vyybee vibe score screen">
-            </div>
+            <span class="ticker-chip">Product Design</span>
+            <span class="ticker-chip">UX Strategy</span>
+            <span class="ticker-chip">Visual Systems</span>
+            <span class="ticker-chip">Wireframes</span>
+            <span class="ticker-chip">Prototypes</span>
+            <span class="ticker-chip">Motion Ready UI</span>
+            <span class="ticker-chip">Figma Systems</span>
+            
+            <!-- Duplicate for seamless scroll -->
+            <span class="ticker-chip">Product Design</span>
+            <span class="ticker-chip">UX Strategy</span>
+            <span class="ticker-chip">Visual Systems</span>
+            <span class="ticker-chip">Wireframes</span>
+            <span class="ticker-chip">Prototypes</span>
+            <span class="ticker-chip">Motion Ready UI</span>
+            <span class="ticker-chip">Figma Systems</span>
           </div>
         </div>
       </section>
@@ -136,7 +140,7 @@
         <div class="project-grid">
           <a class="project-card reveal" href="projects/vyybee.html" aria-label="Open Vyybee case study">
             <div class="project-image-wrapper">
-              <img src="assets/vyybee-journey-score.png" alt="Vyybee Figma screens showing compatibility, journey, and vibe score">
+              <img src="assets/vyybee-pedestal.jpeg" alt="Vyybee dating app preview card mockup">
               <div class="project-overlay">
                 <span class="project-cta">View Case Study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
               </div>
@@ -144,12 +148,12 @@
             <div class="project-info">
               <p class="project-type">Mobile app / Dating</p>
               <h3>Vyybee</h3>
-              <p>A Gen Z dating app shaped around compatibility checks, post-chat journeys, vibe scores, and playful relationship feedback loops.</p>
+              <p>A Gen Z dating app shaped around compatibility checks, future goals, and playful relationship feedback loops. Live on Play Store.</p>
             </div>
           </a>
           <a class="project-card reveal" href="projects/planto.html" aria-label="Open Planto case study">
             <div class="project-image-wrapper">
-              <img src="assets/planto-preview.png" alt="Planto ecommerce landing page preview">
+              <img src="assets/planto-mockup-1.jpeg" alt="Planto ecommerce landing page design preview card">
               <div class="project-overlay">
                 <span class="project-cta">View Case Study <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
               </div>
@@ -262,14 +266,14 @@
         </div>
       </section>
 
-      <!-- About Section -->
+      <!-- About Section with AI artwork -->
       <section id="about" class="section-pad split-section">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Expert Designer</p>
-          <h2>Abhishek Singh, your designer.</h2>
-        </div>
-        <div class="about-copy reveal">
-          <p>Abhishek Singh is a dedicated UI/UX Designer and Editor from Lucknow. He specializes in creative design with seamless execution to craft clean, modern, and purposeful digital experiences.</p>
+        <div class="about-text-column reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Expert Designer</p>
+            <h2>Abhishek Singh, your designer.</h2>
+          </div>
+          <p class="about-bio">Abhishek Singh is a dedicated UI/UX Designer and Editor from Lucknow. He specializes in creative design with seamless execution to craft clean, modern, and purposeful digital experiences.</p>
           <div class="skill-cloud" aria-label="Skills">
             <span>Design System</span>
             <span>UX Design</span>
@@ -281,6 +285,11 @@
             <span>Typography</span>
             <span>Premiere Pro</span>
             <span>After Effects</span>
+          </div>
+        </div>
+        <div class="about-image-column reveal">
+          <div class="about-artwork-frame">
+            <img src="assets/creative-studio.png" alt="Creative design workspace 3D illustration">
           </div>
         </div>
       </section>

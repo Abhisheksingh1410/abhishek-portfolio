@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Planto Case Study - Abhishek Singh</title>
     <meta name="description" content="Planto case study by Abhishek Singh, a premium plant ecommerce landing page.">
+    
+    <!-- Preconnect to Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Satoshi and Plus Jakarta Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
+    <!-- Mouse Follower Ambient Glow -->
+    <div class="mouse-follower" aria-hidden="true"></div>
+
+    <!-- Floating pill header -->
     <header class="site-header">
-      <a class="brand" href="../index.html">
-        <span class="brand-mark">AS</span>
-        <span>Portfolio</span>
+      <a class="brand" href="../index.html" aria-label="Abhishek Singh home">
+        <span class="brand-logo">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6366f1" />
+                <stop offset="100%" stop-color="#38bdf8" />
+              </linearGradient>
+            </defs>
+            <path d="M6 26L14 6C14.5 4.8 15.5 4 16.8 4C18 4 19 4.8 19.5 6L27.5 26" stroke="url(#logo-grad)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 18H22.5" stroke="url(#logo-grad)" stroke-width="3.2" stroke-linecap="round"/>
+            <path d="M10 26C10 26 13 23 16 23C19 23 22 26 22 26" stroke="url(#logo-grad)" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">Abhishek.Design</span>
       </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
         <span></span>
@@ -29,81 +50,105 @@
     </header>
 
     <main>
+      <!-- Case Study Hero -->
       <section class="case-hero section-pad planto-hero">
-        <div class="case-kicker reveal">Web design / Ecommerce landing page</div>
-        <h1 class="reveal">Planto</h1>
-        <p class="case-lede reveal">A premium plant shopping experience that uses a dark botanical atmosphere, glass panels, and product-focused sections to make indoor plants feel aspirational.</p>
-        <img class="case-visual reveal" src="../assets/planto-preview.png" alt="Planto landing page full preview">
+        <div class="case-kicker reveal">Web Design / Ecommerce Landing Page</div>
+        <h1 class="reveal">Planto Case Study</h1>
+        <p class="case-lede reveal">A premium plant shopping experience that uses a dark botanical atmosphere, glass product panels, and customer-focused layouts to make indoor gardening feel aspirational.</p>
+        
+        <!-- Showcase grid of the new mockups -->
+        <div class="planto-mockups-grid reveal">
+          <div class="planto-mockup-card">
+            <img src="../assets/planto-mockup-1.jpeg" alt="Planto design mockup 1">
+            <h4>Landing Page Hero</h4>
+            <p>High-impact typography and deep green shadows setting the natural tone.</p>
+          </div>
+          <div class="planto-mockup-card">
+            <img src="../assets/planto-mockup-2.jpeg" alt="Planto design mockup 2">
+            <h4>Product Glass Cards</h4>
+            <p>Glassmorphic tiles displaying plants, pricing, and compact buy triggers.</p>
+          </div>
+          <div class="planto-mockup-card">
+            <img src="../assets/planto-mockup-3.jpeg" alt="Planto design mockup 3">
+            <h4>Botanical Showcase</h4>
+            <p>Clean, airy desktop grid layout highlighting trending oxygen collections.</p>
+          </div>
+        </div>
       </section>
 
+      <!-- Case Overview Section -->
       <section class="section-pad case-overview">
         <div class="fact-grid reveal">
           <div>
             <span>Role</span>
-            <strong>Landing page UI, visual direction, ecommerce sections</strong>
+            <strong>Landing Page UI, Visual Identity</strong>
           </div>
           <div>
-            <span>Tools</span>
-            <strong>Figma, layout design, visual hierarchy</strong>
+            <span>Tools Used</span>
+            <strong>Figma, Layout Design</strong>
           </div>
           <div>
             <span>Format</span>
-            <strong>Desktop web landing page</strong>
+            <strong>Desktop Web Layout</strong>
           </div>
         </div>
+        
         <div class="case-copy reveal">
-          <h2>Design context</h2>
-          <p>Planto is built as a rich ecommerce landing page for plant lovers. The page opens with a cinematic plant hero, then guides users through trendy plants, top-selling products, customer reviews, and a featured oxygen plant collection.</p>
-          <p>The design leans into deep greens, translucent cards, soft borders, and large plant imagery to create a calm premium mood while keeping buying actions visible.</p>
+          <h2>Design Context</h2>
+          <p>Planto is designed as a rich, long-form landing page for contemporary plant lovers. The experience opens with a dark leafy botanical hero block, then guides shoppers through trending plant lists, top-selling grid items, customer reviews, and a dedicated oxygen plant segment.</p>
+          <p>The layout uses translucent cards, soft borders, and generous margins to create a peaceful plant-care shopping environment while maintaining strong call-to-actions.</p>
         </div>
       </section>
 
+      <!-- Design Approach Section -->
       <section class="section-pad">
         <div class="section-heading reveal">
-          <p class="eyebrow">Design approach</p>
+          <p class="eyebrow">Design Approach</p>
           <h2>Turn a product listing into a calm shopping story.</h2>
         </div>
         <div class="insight-grid">
           <article class="service-card reveal">
-            <h3>Atmospheric hero</h3>
-            <p>The dark leafy background and “Breath Natural” headline establish the brand mood immediately.</p>
+            <h3>Atmospheric Hero</h3>
+            <p>The dark botanical background and “Breathe Natural” display headlines establish a premium, natural brand identity immediately.</p>
           </article>
           <article class="service-card reveal">
-            <h3>Glass product cards</h3>
-            <p>Transparent product cards keep the page layered and premium while still showing names, prices, and actions clearly.</p>
+            <h3>Glass Product Cards</h3>
+            <p>Semi-transparent cards keep the viewport layered and premium while maintaining clarity in product names and pricing.</p>
           </article>
           <article class="service-card reveal">
-            <h3>Trust sections</h3>
-            <p>Customer reviews and curated collections create reassurance before the footer subscription area.</p>
+            <h3>Trust Sections</h3>
+            <p>Strategic placements of reviews, benefits, and plant descriptions build customer trust before reaching checkout.</p>
           </article>
         </div>
       </section>
 
+      <!-- Visual Breakdown Bento Section -->
       <section class="section-pad planto-breakdown">
         <div class="breakdown-card reveal">
           <span>01</span>
-          <h3>Hero and featured plant</h3>
-          <p>Large plant photography anchors the first viewport, supported by navigation, shopping icons, and a featured plant card.</p>
+          <h3>Hero & Showcase</h3>
+          <p>Large-scale leafy photography anchors the first viewport, framed by clean navigation, icons, and featured tags.</p>
         </div>
         <div class="breakdown-card reveal">
           <span>02</span>
-          <h3>Trendy and top-selling plants</h3>
-          <p>Product cards use consistent spacing, rounded glass surfaces, visible pricing, and compact cart actions.</p>
+          <h3>Trendy Glass Cards</h3>
+          <p>Product tiles employ consistent grids, rounded frosted glass layers, visible price points, and mini cart triggers.</p>
         </div>
         <div class="breakdown-card reveal">
           <span>03</span>
-          <h3>Review and collection blocks</h3>
-          <p>The lower sections add social proof and a more editorial collection story before the footer.</p>
+          <h3>Review & Collection</h3>
+          <p>Lower sections integrate user proof, botanical benefits, and newsletter triggers for an editorial shopping journey.</p>
         </div>
       </section>
 
+      <!-- Back Action Section -->
       <section class="section-pad split-section">
         <div class="section-heading reveal">
           <p class="eyebrow">Outcome</p>
-          <h2>A landing page with a strong mood and clear ecommerce path.</h2>
+          <h2>A web system that balances atmosphere with ecommerce paths.</h2>
         </div>
         <div class="about-copy reveal">
-          <p>Planto shows Abhishek’s ability to create a full visual system for a product-focused website: brand atmosphere, product hierarchy, cards, reviews, and conversion points all working together in one long-form landing page.</p>
+          <p>Planto showcases the designer's ability to develop a full web layout system: merging brand story, botanical artwork, glassmorphism UI elements, product cards, and responsive bento grids into a high-fidelity landing page.</p>
           <a class="button primary" href="../index.html#projects">Back to Projects</a>
         </div>
       </section>
