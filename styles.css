@@ -2024,3 +2024,96 @@ body.vyybee-case-study .pill-badge {
   }
 }
 
+/* ==========================================================================
+   Planto Case Study - Custom Typography & Color Theme
+   ========================================================================== */
+
+body.planto-case-study {
+  background-color: #000000;
+  --primary-green: #10b981;
+  --dark-green: #0f291e;
+  --bg-dark: #000000;
+  --text-white: #ffffff;
+  --text-muted: #94a3b8;
+  --bg-light: #d1fae5;
+}
+
+body.planto-case-study h1,
+body.planto-case-study h2,
+body.planto-case-study h3,
+body.planto-case-study h4,
+body.planto-case-study .brand-text,
+body.planto-case-study .pill-badge {
+  font-family: 'Satoshi', sans-serif;
+}
+
+/* Green Theme Overrides for Visualizer */
+.planto-problem-solution-visualizer {
+  background: #060807;
+  position: relative;
+  overflow: hidden;
+}
+
+.badge-dot.green {
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.visualizer-circle-bg.green-glow {
+  border-color: rgba(16, 185, 129, 0.08);
+  box-shadow: inset 0 0 50px rgba(16, 185, 129, 0.02);
+}
+
+.visualizer-circle-bg.green-glow::before {
+  background: #10b981;
+  box-shadow: 0 0 12px #10b981;
+}
+
+/* Problem Card Botanical Green Theme */
+.problem-card.planto-theme {
+  background: #0f291e;
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  box-shadow: 0 30px 65px rgba(16, 185, 129, 0.15);
+}
+
+.problem-card.planto-theme:hover {
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+.problem-card.planto-theme .profile-avatar {
+  background: #10b981;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.problem-card.planto-theme .tab.active {
+  background: rgba(16, 185, 129, 0.25);
+  color: #10b981;
+}
+
+.problem-card.planto-theme .tab:not(.active) {
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Planto Typography & Color Section */
+.planto-typography-color-section {
+  background: #000000;
+}
+
+.planto-typography-color-section .weight-chip:last-child {
+  color: #10b981;
+  border-color: rgba(16, 185, 129, 0.3);
+}
+
+/* Planto Gallery Section */
+.planto-mockup-gallery {
+  background: #050706;
+}
+
+.planto-mockup-gallery .gallery-item:hover {
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+
