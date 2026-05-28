@@ -1485,10 +1485,10 @@ h1 {
 
 body.vyybee-case-study {
   font-family: 'Century Gothic', 'CenturyGothic', AppleGothic, 'Plus Jakarta Sans', sans-serif;
-  background-color: #0c0c0c;
+  background-color: #000000;
   --primary-pink: #f03e6e;
   --dark-pink: #60182c;
-  --bg-dark: #0c0c0c;
+  --bg-dark: #000000;
   --text-white: #ffffff;
   --text-muted: #979797;
   --bg-light: #FFFBE7;
@@ -1501,6 +1501,24 @@ body.vyybee-case-study h4,
 body.vyybee-case-study .brand-text,
 body.vyybee-case-study .pill-badge {
   font-family: 'Century Gothic', 'CenturyGothic', AppleGothic, 'Satoshi', sans-serif;
+}
+
+/* Case Single Visual Frame */
+.case-single-visual {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.case-single-visual .case-visual {
+  max-width: 900px;
+  max-height: 540px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
 }
 
 /* Feature Mockup Custom Frame */
@@ -1757,7 +1775,7 @@ body.vyybee-case-study .pill-badge {
 
 /* Typography & Color Showcase */
 .vyybee-typography-color-section {
-  background: #0c0c0c;
+  background: #000000;
 }
 
 .typo-color-grid {
